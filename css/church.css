@@ -1,0 +1,252 @@
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.sidebar-menu {
+	list-style-type: none;
+}
+.sidebar-menu li{
+	padding: 10px 5% 10px 5% !important;
+	text-align: left !important;
+	font-size: 18px;
+}
+.sidebar-menu li:hover .anchor, .sidebar-menu li:hover i{
+	color:white !important;
+}
+.sidebar-menu li a{
+	font-size: .9rem;
+	text-align: left !important;
+}
+
+#firstdiv{
+	background-color: white;
+	line-height: 60px;
+}
+#darkdiv{
+	height: 98vh;
+	display: inline-block;
+	box-shadow: 0px 0px 10px 5px grey;
+	background-color: #22181c;
+	padding: 15px 0px 0px 0px;
+	font-family: 'Segoe UI Black';
+	text-align: center; 
+	width: 0;
+}
+#paydiv{
+	display: inline-block;
+	margin-width: 100%;
+	margin: auto;
+}
+.anchor{
+	color: #777 !important;
+}
+.anchor:hover{
+	color: #ddd;
+}
+.lista:hover{
+	background-color: rgba(240, 240, 240, 0.4);
+}
+@media(max-width: 575px){
+ 	#darkdiv{
+ 		position: absolute;
+ 		top: 100;
+ 		left: 0;
+ 		z-index: 2;
+ 		overflow-y: auto;
+ 		max-height: 90vh;
+ 	}
+}
+body{
+ 		overflow: hidden;
+ 	}
+#bigdiv{
+ 	max-height: 90vh;
+ 	overflow: auto;
+}
+.header, tbody, thead{
+	text-align: center
+}
+#imgmap{
+	text-align: left;
+}
+.signin{
+	font-size: 12px;
+	text-align: right;
+}
+.gospel{
+	font-size: 9px;
+	display: inline-block;
+}
+hr{
+	background-color: #999;
+}
+#admins{
+	border: 1px solid #00994d; 
+	font-size: 12px; 
+	padding: 5px; 
+	border-radius: 10px; 
+	float: right; 
+	margin-top: 10px
+}
+#dropmenus {
+	background-color: #acb;
+	border-radius: 20px; 
+	display: none; 
+	position: absolute; 
+	top: 65px; 
+	z-index: 1; 
+	width: 200px; 
+	left: 900px; 
+	text-align: center;
+}
+h6 a{
+	display: block; 
+	color: orange !important;
+	padding-top: 20px; 
+}
+#dropmenus a{
+	display: block; 
+	color: black; 
+	padding: 3px 0px 5px 0px;
+}
+#departname{
+	font-size: 12p5fx; 
+	margin-left: 20px;
+}
+th, td{
+	font-size: 12px !important;
+}
+.edit{
+	border-radius: 5px; 
+	background-color: #333; 
+	color: #ddd; 
+	border: none; 
+	padding: 4px 20px 4px 20px;
+}
+#blur{
+	z-index: 1; 
+	background-color: rgba(255,0,0,0.1); 
+	width: 100vw; 
+	height: 90vh; 
+	position: absolute; 
+	top: 60px; 
+	left: 0px
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #eee;
+    margin: auto;
+    padding: 0;
+    border: 4px solid #aaa;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+.modal-content::after{
+	content: "";
+    position: absolute;
+    top: 100%;
+    left: 46%;
+    margin-left: -5px;
+    border-width: 40px;
+    border-style: solid;
+    border-color: #eee transparent transparent transparent;
+}
+.modal-contents {
+    position: relative;
+    background-color: #eee;
+    margin: auto;
+    padding: 0;
+    border: 4px solid #aaa;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.modal-contents::after{
+	content: "";
+    position: absolute;
+    top: 100%;
+    left: 6%;
+    margin-left: -5px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: #aaa transparent transparent transparent;
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    float: right;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.payers{
+	color: black;
+	font-size: 14px;
+}
+#indiv{
+	display: none; 
+	z-index: 8; 
+	position: absolute; 
+	left: 200px; 
+	width: 200px; 
+	background-color: #aaa; 
+	border-radius: 5px; 
+	padding-left: 10px;
+}
+.checkers:hover{
+	cursor: pointer;
+}
